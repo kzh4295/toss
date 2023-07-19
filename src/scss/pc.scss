@@ -1,0 +1,120 @@
+@import "src/scss/common";
+
+html, body{background: #201710;}
+
+#container {
+  strong {
+    font-size:0;
+  }
+  table {
+    font-size:0;
+  }
+}
+
+.preInit{
+  cursor: not-allowed !important;
+}
+
+/* header */
+.p-header{
+  @include hide-text;
+  height:869px;
+  position:relative;
+  @include bg($bg:"bg-header.jpg");
+  @include hide-text;
+
+  span{
+    @include hide-text;
+  }
+}
+
+/* contents */
+.p-sec {
+  &1 {
+    height:1068px;
+    position:relative;
+    @include bg($bg:"bg-sec1.jpg");
+    @include hide-text;
+    &__btn{
+      @include hide-text;
+      @include position-abs($width: 235px, $height: 95px, $top: 50%, $left: 50%);
+      @include bg($bg:"btn.png");
+      margin-top: 154px;
+      z-index: 999;
+    }
+  }
+  &2 {
+    height: 2572px;
+    position:relative;
+    @include bg($bg:"bg-sec2.jpg");
+    @include hide-text;
+  }
+  &3 {
+    height: 1711px;
+    position:relative;
+    @include bg($bg:"bg-sec3.jpg");
+    @include hide-text;
+    &__btn{
+      @include hide-text;
+      @include position-abs($width: 304px, $height: 71px, $top: 50%, $left: 50%);
+      margin-left: -152px;
+      margin-top: 696px;
+    }
+  }
+  &4 {
+    height: 2415px;
+    position:relative;
+    @include bg($bg:"bg-sec4.jpg");
+    @include hide-text;
+    &__btn{
+      &--1{
+        @include hide-text;
+        @include position-abs($width: 36px, $height: 36px, $top: 50%, $left: 50%);
+        margin-left: 269px;
+        margin-top: -217px;
+      }
+      &--2{
+        @include hide-text;
+        @include position-abs($width: 36px, $height: 36px, $top: 50%, $left: 50%);
+        margin-left: 410px;
+        margin-top: -217px;
+      }
+      &--3{
+        @include hide-text;
+        @include position-abs($width: 36px, $height: 36px, $top: 50%, $left: 50%);
+        margin-left: -10px;
+        margin-top: 29px;
+      }
+      &--4{
+        @include hide-text;
+        @include position-abs($width: 36px, $height: 36px, $top: 50%, $left: 50%);
+        margin-left: 130px;
+        margin-top: 29px;
+      }
+    }
+  }
+  &5 {
+    height: 1634px;
+    position:relative;
+    @include bg($bg:"bg-sec5.jpg");
+    @include hide-text;
+    &__btn{
+      &--1{
+        @include hide-text;
+        @include position-abs($width: 443px, $height: 71px, $top: 50%, $left: 50%);
+        margin-left: -221px;
+        margin-top: -817px;
+      }
+      &--2{
+        @include hide-text;
+        @include position-abs($width: 443px, $height: 71px, $top: 50%, $left: 50%);
+        margin-left: -233px;
+        margin-top: 634px;
+      }
+    }
+  }
+}
+
+
+
+
