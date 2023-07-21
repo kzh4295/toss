@@ -1,9 +1,6 @@
-// base
-@import "mixin/position-abs";
-@import "mixin/bg";
-@import "mixin/hide-text";
-
-// reset
+@import "./mixin/_position-abs.scss";
+@import "./mixin/_bg.scss";
+@import "./mixin/_hide-text.scss";
 
 body{margin:0; padding:0; font-size:11px; line-height:1;}
 

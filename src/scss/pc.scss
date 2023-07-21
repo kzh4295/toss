@@ -1,6 +1,9 @@
-@import "src/scss/common";
+@import "../scss/common.scss";
 
-html, body{background: #201710;}
+html, body{
+  background: #ffffff;
+  overflow-x: hidden;
+}
 
 #container {
   strong {
@@ -11,110 +14,256 @@ html, body{background: #201710;}
   }
 }
 
-.preInit{
-  cursor: not-allowed !important;
-}
 
-/* header */
-.p-header{
-  @include hide-text;
-  height:869px;
-  position:relative;
-  @include bg($bg:"bg-header.jpg");
-  @include hide-text;
-
-  span{
-    @include hide-text;
+.section1{
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-image: url("https://static.toss.im/assets/homepage/newtossim/new_main.png");
+  &__title{
+    font-size: 100px;
+    display: inline-block;
+    margin-top: 221px;
   }
 }
 
-/* contents */
-.p-sec {
-  &1 {
-    height:1068px;
-    position:relative;
-    @include bg($bg:"bg-sec1.jpg");
-    @include hide-text;
-    &__btn{
-      @include hide-text;
-      @include position-abs($width: 235px, $height: 95px, $top: 50%, $left: 50%);
-      @include bg($bg:"btn.png");
-      margin-top: 154px;
-      z-index: 999;
+.section2{
+  &__bg{
+    background-color: #f9fafb;
+    height: 1000px;
+  }
+  &__title{
+    font-size: 35px;
+    line-height: 100px;
+    padding-top: 400px;
+  }
+}
+
+.section3{
+  height: 2000px;
+  &__img{
+    &--right{
+      &-frame{
+        @include position-abs($width: 788px, $height: 1500px, $top: 223%, $right: 20%);
+        background-image: url("https://static.toss.im/screens/iPhone12_Clay_Shadow.png");
+        background-size: cover;
+        margin-right: -281px;
+        z-index: 10;
+      }
+      &-ctn{
+        @include position-abs($width: 543px, $height: 1144px, $top: 223%, $right: 20%);
+        background-size: cover;
+        background-image: url(" https://static.toss.im/assets/homepage/newtossim/section1_1_home_01.png");
+        margin-right: -246px;
+        margin-top: 165px;
+      }
     }
-  }
-  &2 {
-    height: 2572px;
-    position:relative;
-    @include bg($bg:"bg-sec2.jpg");
-    @include hide-text;
-  }
-  &3 {
-    height: 1711px;
-    position:relative;
-    @include bg($bg:"bg-sec3.jpg");
-    @include hide-text;
-    &__btn{
-      @include hide-text;
-      @include position-abs($width: 304px, $height: 71px, $top: 50%, $left: 50%);
-      margin-left: -152px;
-      margin-top: 696px;
-    }
-  }
-  &4 {
-    height: 2415px;
-    position:relative;
-    @include bg($bg:"bg-sec4.jpg");
-    @include hide-text;
-    &__btn{
-      &--1{
-        @include hide-text;
-        @include position-abs($width: 36px, $height: 36px, $top: 50%, $left: 50%);
-        margin-left: 269px;
-        margin-top: -217px;
+
+    &--left{
+      &-frame{
+        @include position-abs($width: 788px, $height: 1500px, $top: 223%, $left: 20%);
+        background-image: url("https://static.toss.im/screens/iPhone12_Clay_Shadow.png");
+        background-size: cover;
+        margin-left: -384px;
+        margin-top: 500px;
+        z-index: 10;
       }
-      &--2{
-        @include hide-text;
-        @include position-abs($width: 36px, $height: 36px, $top: 50%, $left: 50%);
-        margin-left: 410px;
-        margin-top: -217px;
-      }
-      &--3{
-        @include hide-text;
-        @include position-abs($width: 36px, $height: 36px, $top: 50%, $left: 50%);
-        margin-left: -10px;
-        margin-top: 29px;
-      }
-      &--4{
-        @include hide-text;
-        @include position-abs($width: 36px, $height: 36px, $top: 50%, $left: 50%);
-        margin-left: 130px;
-        margin-top: 29px;
+      &-ctn{
+        @include position-abs($width: 543px, $height: 1144px, $top: 223%, $left: 20%);
+        background-size: cover;
+        background-image: url("https://static.toss.im/assets/homepage/newtossim/section1_1_home_02.png");
+        margin-right: -246px;
+        margin-left: -169px;
+        margin-top: 691px;
       }
     }
   }
-  &5 {
-    height: 1634px;
-    position:relative;
-    @include bg($bg:"bg-sec5.jpg");
-    @include hide-text;
-    &__btn{
-      &--1{
-        @include hide-text;
-        @include position-abs($width: 443px, $height: 71px, $top: 50%, $left: 50%);
-        margin-left: -221px;
-        margin-top: -817px;
+
+  &__text{
+    &--left{
+      display: inline-block;
+      margin-top: 222px;
+      margin-left: -922px;
+      font-size: 40px;
+      &-1{
+        text-align: left;
+        color: #3182f6;
       }
-      &--2{
-        @include hide-text;
-        @include position-abs($width: 443px, $height: 71px, $top: 50%, $left: 50%);
-        margin-left: -233px;
-        margin-top: 634px;
+      &-2{
+        text-align: left;
+        line-height: 80px;
+      }
+    }
+    &--right{
+      &-1{
+        display: inline-block;
+        margin-top: 900px;
+        margin-right: -922px;
+        font-size: 38px;
+        font-weight: 600;
+        line-height: 1.5;
+        text-align: left;
       }
     }
   }
 }
 
+.section4{
+  background-color: #f9fafb;
+  height: 2500px;
+  &__title{
+    display: inline-block;
+    margin-top: 222px;
+    margin-left: -1255px;
+    font-size: 40px;
+    color: #3182f6;
+    text-align: left;
+  }
+  &__sub-title{
+    margin-top: 13px;
+    left: 100px;
+    margin-left:193px;
+    text-align: left;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.555;
+  }
+  &__ctn{
+    &-1{
+      &-1{
+        color: #3182f6;
+        text-align: left;
+        margin-left: 262px;
+        margin-top: 174px;
+        font-size: 24px;
+      }
+      &-2{
+        text-align: left;
+        margin-left: 201px;
+        margin-top: -23px;
+        line-height: 1.4;
+        font-size: 50px;
+      }
+      &-3{
+        color: #6b7684;
+        text-align: left;
+        margin-left: 201px;
+        margin-top: -23px;
+        line-height: 1.4;
+        font-size: 30px;
+      }
+      &-4{
+        @include position-abs($width: 450px, $height: 350px, $top: 510%, $right: 15%);
+        background-size: cover;
+      }
+    }
+    &-2{
+      &-1{
+        @include position-abs($width: 450px, $height: 350px, $top: 566%, $left: 10%);
+        background-size: cover;
+      }
+      &-2{
+        text-align: left;
+        color: #3182f6;
+        margin-left: 1067px;
+        margin-top: 249px;
+        font-size: 24px;
+        line-height: 1.7;
+      }
+      &-3{
+        text-align: left;
+        margin-left: 994px;
+        margin-top: -23px;
+        line-height: 1.4;
+        font-size: 50px;
+      }
+      &-4{
+        color: #6b7684;
+        text-align: left;
+        margin-top: -23px;
+        margin-left: 994px;
+        line-height: 1.4;
+        font-size: 30px;
+      }
+    }
+    &-3{
+      &-1{
+        color: #3182f6;
+        text-align: left;
+        margin-left: 262px;
+        margin-top: 174px;
+        font-size: 24px;
+      }
+      &-2{
+        text-align: left;
+        margin-left: 201px;
+        margin-top: -23px;
+        line-height: 1.4;
+        font-size: 50px;
+      }
+      &-3{
+        color: #6b7684;
+        text-align: left;
+        margin-left: 201px;
+        margin-top: -23px;
+        line-height: 1.4;
+        font-size: 30px;
+      }
+      &-4{
+        @include position-abs($width: 450px, $height: 350px, $top: 620%, $right: 15%);
+        background-size: cover;
+      }
+    }
+  }
+}
 
-
+.section5{
+  height: 1000px;
+  &__section-name{
+    text-align: left;
+    font-size: 40px;
+    color: #3182f6;
+    margin-left:400px;
+    margin-top:200px;
+  }
+  &__title{
+    text-align: left;
+    font-size: 40px;
+    margin-left:400px;
+    margin-top:50px;
+    line-height: 70px;
+  }
+  &__text{
+    &--1{
+      text-align: left;
+      font-size: 40px;
+      margin-left:400px;
+      margin-top:50px;
+      line-height: 70px;
+    }
+    &--2{
+      text-align: left;
+      font-size: 30px;
+      margin-left:400px;
+      margin-top:50px;
+      line-height: 70px;
+    }
+  }
+  &__phone{
+    &--frame{
+      @include position-abs($width: 788px, $height: 1500px, $top: 692%, $right: 20%);
+      background-image: url("https://static.toss.im/screens/iPhone12_Clay_Shadow.png");
+      background-size: cover;
+      margin-right: -281px;
+      z-index: 10;
+    }
+    &--ctn{
+      @include position-abs($width: 543px, $height: 1144px, $top: 692%, $right: 20%);
+      background-size: cover;
+      background-image: url("https://static.toss.im/assets/homepage/newtossim/section1_3_loan_03.png");
+      margin-right: -246px;
+      margin-top: 165px;
+    }
+  }
+}
 

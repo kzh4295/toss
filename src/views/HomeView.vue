@@ -1,6 +1,5 @@
 <template>
   <the-main />
-  <the-section1 />
 </template>
 
 <script>
@@ -11,7 +10,8 @@ export default {
   name: 'HomeView',
   components: {
     'the-main': TheMain,
-    'the-section1': TheSection1
   }
 }
 </script>
+<style lang="scss">
+</style>
