@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "dbserve": "json-server --watch db.json --middlewares server.js --routes routes.json --port 8079 --id idx"
+    "build": "vue-cli-service build"
   },
   "dependencies": {
     "core-js": "^3.8.3",
@@ -14,7 +13,6 @@
     "vuex": "^4.0.0"
   },
   "devDependencies": {
-    "json-server": "^0.17.0",
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-router": "~5.0.0",
     "@vue/cli-plugin-vuex": "~5.0.0",

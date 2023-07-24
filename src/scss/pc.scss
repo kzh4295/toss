@@ -218,7 +218,7 @@ html, body{
 }
 
 .section5{
-  height: 1000px;
+  height: 1400px;
   &__section-name{
     text-align: left;
     font-size: 40px;
@@ -263,6 +263,299 @@ html, body{
       background-image: url("https://static.toss.im/assets/homepage/newtossim/section1_3_loan_03.png");
       margin-right: -246px;
       margin-top: 165px;
+    }
+  }
+}
+
+.section6{
+  background-color: #f9fafb;
+  height: 1500px;
+  &__section-name{
+    display: inline-block;
+    text-align: left;
+    font-size: 30px;
+    font-weight: 600;
+    color: #3182f6;
+    padding-top: 200px;
+    margin-left: -1268px;
+  }
+  &__title{
+    margin-top:30px;
+    text-align: left;
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 280px;
+    line-height: 1.6;
+  }
+  &__sub-title{
+    &--1{
+      display: inline-block;
+      &-logo{
+        @include position-abs($width: 120px, $height: 120px, $top:911%, $left: 15%);
+        background-size: cover;
+        margin-top: 30px;
+        background-image: url("https://static.toss.im/icons/png/4x/icon-credit-grade-check-2.png");
+      }
+      &-text{
+        display: inline-block;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 1.5;
+        margin-top: 253px;
+        margin-left: -474px;
+      }
+      &-desc{
+        display: inline-block;
+        text-align: left;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 1.5;
+        margin-left: -196px;
+      }
+    }
+    &--2{
+      display: inline-block;
+      &-logo{
+        @include position-abs($width: 120px, $height: 120px, $top:911%, $left: 53%);
+        background-size: cover;
+        margin-top: 30px;
+        background-image: url("https://static.toss.im/icons/png/4x/icon-credit-grade-up-2.png");
+      }
+      &-text{
+        display: inline-block;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 1.5;
+        float: right;
+        margin-right: 202px;
+        margin-top: -31px;
+      }
+      &-desc{
+        display: inline-block;
+        text-align: left;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 1.5;
+        margin-left:308px;
+      }
+    }
+    &--3{
+      display: flex;
+      flex-direction: column;
+      &-logo{
+        @include position-abs($width: 120px, $height: 120px, $top:959%, $left: 15%);
+        background-size: cover;
+        background-image: url("https://static.toss.im/icons/png/4x/icon-alarm-3.png");
+      }
+      &-text{
+        display: inline-block;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 1.5;
+        margin-top: 275px;
+        margin-left: -1154px;
+      }
+      &-desc{
+        display: inline-block;
+        text-align: left;
+        margin-left: 288px;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 1.5;
+      }
+    }
+    &--4{
+      display: inline-block;
+      &-logo{
+        @include position-abs($width: 120px, $height: 120px, $top:955%, $left: 53%);
+        background-size: cover;
+        margin-top: 30px;
+        background-image: url("https://static.toss.im/icons/png/4x/icon-bulb-2.png");
+      }
+      &-text{
+        display: inline-block;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 1.5;
+        float: right;
+        margin-left: 297px;
+        margin-top: -122px;
+      }
+      &-desc{
+        position:absolute;
+        text-align: left;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 1.5;
+        margin-top: -80px;
+        margin-left: 296px;
+      }
+    }
+  }
+}
+
+.section7{
+  height:1800px;
+  &__section-name{
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #3182f6;
+    margin-left: -1034px;
+    padding-top: 348px;
+  }
+  &__title{
+    font-weight: 700;
+    line-height: 1.4;
+    text-align: left;
+    font-size: 40px;
+    margin-left:400px;
+    margin-top:50px;
+  }
+  &__frame{
+    @include position-abs($width: 600px, $height: 936px, $top: 1072%, $right: 45%);
+    background-image: url("https://static.toss.im/screens/iPhone12_Clay_Shadow.png");
+    background-size: cover;
+    margin-right: -148px;
+    z-index: 10;
+  }
+  &__ctn{
+    @include position-abs($width: 338px, $height: 692px,$top: 1072%, $right: 45%);
+    background-size: cover;
+    background-image: url("https://static.toss.im/assets/homepage/newtossim/section1_5_stock_01.png");
+    margin-right: -18px;
+    margin-top: 101px;
+  }
+  &__text1{
+    display: inline-block;
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-left: -203px;
+    margin-top: 290px;
+  }
+  &__text2{
+    float:right;
+    display: inline-block;
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-top: 290px;
+    margin-right: 487px;
+  }
+  &__text3{
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-top: 512px;
+    margin-left: -100px;
+  }
+}
+
+.section8{
+  height: 1000px;
+  &__bg{
+    width: 100vw;
+    height: 800px;
+    background-size: cover;
+    background-image: url("https://static.toss.im/assets/homepage/newtossim/section2_4_big.jpg");
+  }
+  &__title{
+    @include position-abs($width: 1000px, $height: 200px, $top: 1236%, $right: 50%);
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #f9fafb;
+    text-align: center;
+  }
+}
+
+.section9{
+  height: 1000px;
+  &__title{
+    @include position-abs($width: 1000px, $height: 200px, $top: 1313%, $right: 50%);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.4;
+    text-align: left;
+  }
+  &__ctn{
+    @include position-abs($width: 100%, $height: 800px, $top: 1349%, $right: 27%);
+    max-width: 740px;
+    background-size: cover;
+    background-image: url("https://static.toss.im/assets/homepage/newtossim/section2_1_document.jpg");
+  }
+  &__text{
+    margin-top: 1200px;
+    &--1{
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1.3;
+      color: #191f28;
+      margin-left: -177px;
+    }
+    &--2{
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1.3;
+      color: #b0b8c1;
+      margin-left:10px;
+    }
+    &--3{
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 1.5;
+      color: #333d4b;
+      text-align: left;
+      margin-left: 455px;
+    }
+  }
+}
+
+.section10{
+  height: 1000px;
+  &__left{
+    &-img{
+      @include position-abs($width: 600px, $height: 800px, $top: 1476%, $left: 24%);
+      background-size: cover;
+      background-image: url("https://static.toss.im/assets/homepage/newtossim/section2_2_insu_01.jpg");
+    }
+    &-title{
+      display: inline-block;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1.3;
+      color: #191f28;
+      margin-left: -917px;
+      margin-top: 170px;
+    }
+    &-desc{
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1.3;
+      color: #b0b8c1;
+      text-align: left;
+      margin-left: 446px;
+    }
+  }
+  &__right{
+
+    &-img{
+      @include position-abs($width: 300px, $height: 400px, $top: 1476%, $left: 50%);
+      background-size: cover;
+      background-image: url("https://static.toss.im/assets/homepage/newtossim/section2_2_insu_02.jpg");
+      margin-left: 156px;
+      margin-top: 156px;
+    }
+    &-desc{
+      display: inline-block;
+      text-align: left;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 1.5;
+      color: #333d4b;
+
     }
   }
 }

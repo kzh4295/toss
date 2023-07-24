@@ -105,19 +105,120 @@
     <div class="section5__phone--ctn"></div>
 
   </section>
+
   <section class="section6">
+    <span class="section6__section-name">신용</span>
+    <div class="section6__title">금융 생활의 첫 걸음, <br/>
+      신용점수를 미리<br/>
+      무료로 관리하세요
+    </div>
+
+    <div class="section6__sub-title--1">
+      <span class="section6__sub-title--1-logo"></span>
+      <span class="section6__sub-title--1-text">내 신용점수</span>
+      <br />
+      <div class="section6__sub-title--1-desc">
+        언제 어디서든, 원할 때 간편하게 <br />
+        KCB, NICE 신용점수를 한 곳에서 확인할 수<br />
+        있어요.
+      </div>
+    </div>
+    <div class="section6__sub-title--2">
+      <span class="section6__sub-title--2-logo"></span>
+      <span class="section6__sub-title--2-text">신용점수 올리기</span>
+      <br />
+      <div class="section6__sub-title--2-desc">
+        통신비, 일반 납부내역 등의 서류를 <br />
+        토스에서 바로 제출해 신용점수를 올릴 수<br />
+        있어요.
+      </div>
+    </div>
+    <div class="section6__sub-title--3">
+      <span class="section6__sub-title--3-logo"></span>
+      <span class="section6__sub-title--3-text">신용관리 알림</span>
+      <br />
+      <div class="section6__sub-title--3-desc">
+        신용점수에 변동이 생기면 토스가 알람을 보내드려요.<br />
+        나의 신용점수가 바뀔 때마다 바로 확인하세요.<br />
+      </div>
+    </div>
+    <div class="section6__sub-title--4">
+      <span class="section6__sub-title--4-logo"></span>
+      <span class="section6__sub-title--4-text">신용관리 팁</span>
+      <br />
+      <div class="section6__sub-title--4-desc">
+        신용점수 관리가 막막하다면? <br />
+        신용관리 팁 콘텐츠를 한번 읽어보세요. <br />
+      </div>
+    </div>
 
   </section>
+
   <section class="section7">
-
+    <div class="section7__section-name">투자</div>
+    <div class="section7__title">
+      투자, <br />
+      모두가 할 수 있도록
+    </div>
+    <div class="section7__frame"></div>
+    <div class="section7__ctn"></div>
+    <div class="section7__text1">
+      이해하기 쉬운 용어<br/>
+      설명이 필요 없는<br/>
+      직관적인 화면 구성<br/>
+    </div>
+    <div class="section7__text2">
+      송금처럼 쉬운 구매 경험 <br/>
+      그리고 투자 판단에<br/>
+      도움을 주는 콘텐츠까지<br/>
+    </div>
+    <div class="section7__text3">
+      별도 앱 설치 없이 토스에서 바로, <br />
+      토스증권으로 나만의 투자를 시작해 보세요.</div>
   </section>
+
   <section class="section8">
-
+    <div class="section8__bg"></div>
+    <h1 class="section8__title">꼭 필요했던 금융</h1>
   </section>
+
   <section class="section9">
+    <h1 class="section9__title">토스로<br />나에게 딱 맞게</h1>
+    <div class="section9__ctn"></div>
+    <div class="section9__text">
+      <span class="section9__text--1">내 문서함</span>
+      <span class="section9__text--2">공공문서 확인부터 납부까지 한 번에</span>
+      <p class="section9__text--3">
+        건강검진, 국가장학금 신청, 교통범칙금·과태료 납부.<br />
+        그동안 종이로 받았던 문서들 꼼꼼히 챙기느라 고생했어요.<br />
+        앞으로는 토스 내 문서함에서 간단히 받아보고 납부할 수 있어요.<br />
+      </p>
+    </div>
+  </section>
+
+  <section class="section10">
+    <div class="section10__left-img"></div>
+    <div class="section10__left-title">보험</div>
+    <div class="section10__left-desc">
+      조회부터 상담,<br />
+      병원비 돌려받기를 간편하게
+    </div>
+
+    <div class="section10__right-img"></div>
+    <span class="section10__right-desc">
+      또래보다 보험료는 적절하게 내고 있는지,<br />
+      낸 만큼 보장받고 있는지 확인해 보세요.<br />
+      전문가와의 상담을 통해 내게 딱 맞는 보험을.<br />
+      추천 받고, 병원비를 간편하게 청구할 수.<br />
+      있어요.
+    </span>
+  </section>
+
+  <section class="section11">
 
   </section>
-  <section class="section10">
+
+  <section class="section12">
 
   </section>
 
