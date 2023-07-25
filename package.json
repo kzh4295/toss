@@ -18,12 +18,27 @@
     "@vue/cli-plugin-vuex": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
     "sass": "^1.45.0",
-    "sass-loader": "^10.2.0"
+    "sass-loader": "^10.2.0",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
   },
   "browserslist": [
     "> 1%",
     "last 2 versions",
     "not dead",
     "not ie 11"
-  ]
+  ],
+  "description": "## Project setup ``` npm install ```",
+  "main": "babel.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kzh4295/toss.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kzh4295/toss/issues"
+  },
+  "homepage": "https://github.com/kzh4295/toss#readme"
 }
