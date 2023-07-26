@@ -215,11 +215,21 @@
   </section>
 
   <section class="section11">
-
+    <div class="section11__bg"></div>
+    <div class="section11__text--left">
+      <div class="section11__text--left-1">
+        내 부동산 · 자동차
+      </div>
+      <div class="section11__text--left-2">정기적으로 관리해보세요</div>
+    </div>
+    <div class="section11__text--right">
+      집과 자동차의 공통점은 잘 사서, 잘 관리하고, 잘 팔아야 한다는 것.<br />
+      시세조회부터 아파트 관리비 납부, 자동차 보험료 조회까지 부동산과<br />
+      자동차 관리도 토스에서 시작해 보세요.
+    </div>
   </section>
 
   <section class="section12">
-
   </section>
 
 
