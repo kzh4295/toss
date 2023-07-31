@@ -14,98 +14,174 @@ html, body{
   }
 }
 
+//.ctn-container{
+//  max-width: 1140px;
+//  outline: 1px solid red;
+//}
+
+@keyframes spin {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 0;
+  }
+}
 
 .section1{
   width: 100vw;
   height: 100vh;
   background-size: cover;
+  position:relative;
   background-image: url("https://static.toss.im/assets/homepage/newtossim/new_main.png");
   &__title{
-    font-size: 100px;
+    font-size: 66px;
+    margin-top: 262px;
+    color: rgb(25, 31, 40);
     display: inline-block;
-    margin-top: 221px;
+    white-space: nowrap;
+    line-height: 1.3;
+    @media screen and (max-width:640px){
+      font-size: 33px;
+      font-weight: 700;
+      line-height: 1.4;
+      color: rgb(25, 31, 40);
+    }
+  }
+  &__apple{
+    background-color: #4e5968;
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    width: 155px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-bottom: -55px
+  }
+  &__galaxy{
+    background-color: #4e5968;
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    width: 155px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-right: -155px;
+    margin-bottom: -55px
+  }
+  &__scroll{
+    @include position-abs($width: 54px, $height: 53px, $left: 50%, $top: 50%);
+    margin-left: -27px;
+    margin-top: 394px;
+    overflow: visible;
+    animation: spin 2s infinite;
+    z-index:3;
   }
 }
 
 .section2{
   &__bg{
     background-color: #f9fafb;
-    height: 1000px;
+    height: 600px;
+    margin:0;
   }
   &__title{
-    font-size: 35px;
-    line-height: 100px;
-    padding-top: 400px;
+    font-size: 30px;
+    line-height: 1.5;
+    padding-top: 230px;
+    margin:0;
+    color: rgb(25, 31, 40);
   }
 }
 
 .section3{
-  height: 2000px;
+  height: 3200px;
+  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   &__img{
     &--right{
       &-frame{
-        @include position-abs($width: 788px, $height: 1500px, $top: 223%, $right: 20%);
+        @include position-abs($width: 788px, $height: 1500px, $top: 50%, $right: 50%);
         background-image: url("https://static.toss.im/screens/iPhone12_Clay_Shadow.png");
         background-size: cover;
-        margin-right: -281px;
         z-index: 10;
+        margin-top: -1135px;
+        margin-right: -574px;
       }
       &-ctn{
-        @include position-abs($width: 543px, $height: 1144px, $top: 223%, $right: 20%);
+        @include position-abs($width: 543px, $height: 1144px, $top: 50%, $right: 50%);
         background-size: cover;
         background-image: url(" https://static.toss.im/assets/homepage/newtossim/section1_1_home_01.png");
-        margin-right: -246px;
-        margin-top: 165px;
+        margin-right: -539px;
+        margin-top: -970px;
       }
     }
-
     &--left{
       &-frame{
-        @include position-abs($width: 788px, $height: 1500px, $top: 223%, $left: 20%);
+        @include position-abs($width: 788px, $height: 1500px, $top: 50%, $left: 50%);
         background-image: url("https://static.toss.im/screens/iPhone12_Clay_Shadow.png");
         background-size: cover;
-        margin-left: -384px;
-        margin-top: 500px;
+        margin-top: 210px;
+        margin-left: -745px;
         z-index: 10;
       }
       &-ctn{
-        @include position-abs($width: 543px, $height: 1144px, $top: 223%, $left: 20%);
+        @include position-abs($width: 543px, $height: 1144px, $top: 50%, $left: 50%);
         background-size: cover;
         background-image: url("https://static.toss.im/assets/homepage/newtossim/section1_1_home_02.png");
-        margin-right: -246px;
-        margin-left: -169px;
-        margin-top: 691px;
+        margin-left: -541px;
+        margin-top: 399px;
       }
     }
+  }
+  &__ctn-container{
+    width: 1140px;
+    height: 100%;
+    outline: 1px solid red;
+    padding-top:-100px;
+    &--text{
+      &-left{
+        &-1{
+          outline: 1px solid blue;
+          display: inline-block;
+          font-size:26px;
+          color: #3182f6;
+          margin-top: 200px;
+          margin-left: -1038px;
+          white-space: nowrap;
+        }
+        &-2{
+          white-space: nowrap;
+          text-align: left;
+          font-size: 43px;
+          line-height: 1.6;
+        }
+      }
+    }
+
+
   }
 
-  &__text{
-    &--left{
-      display: inline-block;
-      margin-top: 222px;
-      margin-left: -922px;
-      font-size: 40px;
-      &-1{
-        text-align: left;
-        color: #3182f6;
-      }
-      &-2{
-        text-align: left;
-        line-height: 80px;
-      }
-    }
-    &--right{
-      &-1{
-        display: inline-block;
-        margin-top: 900px;
-        margin-right: -922px;
-        font-size: 38px;
-        font-weight: 600;
-        line-height: 1.5;
-        text-align: left;
-      }
-    }
-  }
 }
 
 .section4{

@@ -1,7 +1,16 @@
 <template>
   <section class="section1">
     <h1 class="section1__title">금융의 모든 것 <br /> 토스에서 쉽고 간편하게</h1>
+    <a href="" class="section1__apple">
+      <img alt="apple-logo" src="/img/apple-logo.png" />
+      App Store
+    </a>
+    <a href="" class="section1__galaxy">
+      <img alt="galaxy-logo" src="/img/galaxy-logo.png" />Google Play</a>
+
+    <img  src="/img/scroll.png" alt="scroll-img" class="section1__scroll" />
   </section>
+
   <section class="section2">
     <div class="section2__bg">
       <h1 class="section2__title">내 모든 금융 내역을 한눈에 조회하고 한 곳에서 관리하세요. <br />
@@ -9,29 +18,33 @@
         토스와 함께라면 당신의 일상이 새로워질 거예요.</h1>
     </div>
   </section>
-  <section class="section3">
-    <div class="section3__img--right">
-      <div class="section3__img--right-frame"></div>
-      <div class="section3__img--right-ctn"></div>
-    </div>
-    <div class="section3__img--left">
-      <div class="section3__img--left-frame"></div>
-      <div class="section3__img--left-ctn"></div>
-    </div>
 
-    <div class="section3__text--left">
-      <h1 class="section3__text--left-1">홈 · 소비</h1>
-      <h1 class="section3__text--left-2">내 돈 관리, <br />
-        지출부터 일정까지 <br />
-        똑똑하게
-      </h1>
-    </div>
-    <div class="section3__text--right">
-      <h1 class="section3__text--right-1">
-        토스에 계좌와 카드를 연결해 보세요.<br />
-        계좌 잔액, 대출·투자 내역은 기본,<br />
-        일자별 소비와 수입까지 한 번에 볼 수 있어요.
-      </h1>
+  <section class="section3">
+
+    <div class="section3__ctn-container">
+      <div class="section3__img--right">
+        <div class="section3__img--right-frame"></div>
+        <div class="section3__img--right-ctn"></div>
+      </div>
+      <div class="section3__img--left">
+        <div class="section3__img--left-frame"></div>
+        <div class="section3__img--left-ctn"></div>
+      </div>
+
+      <div class="section3__ctn-container--text-left">
+        <h1 class="section3__ctn-container--text-left-1">홈 · 소비</h1>
+        <h1 class="section3__ctn-container--text-left-2">내 돈 관리, <br />
+          지출부터 일정까지 <br />
+          똑똑하게
+        </h1>
+      </div>
+      <div class="section3__text--right">
+        <h1 class="section3__text--right-1">
+          토스에 계좌와 카드를 연결해 보세요.<br />
+          계좌 잔액, 대출·투자 내역은 기본,<br />
+          일자별 소비와 수입까지 한 번에 볼 수 있어요.
+        </h1>
+      </div>
     </div>
   </section>
 
@@ -237,7 +250,12 @@
 
 <script>
 export default {
-  name: 'TheMain'
+  name: 'TheMain',
+  data() {
+    return {
+      imagePath: './img/apple-logo.png' // public 폴더를 기준으로 상대 경로를 사용합니다.
+    };
+  }
 }
 </script>
 
