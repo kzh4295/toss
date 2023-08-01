@@ -113,232 +113,285 @@ html, body{
 }
 
 .section3{
-  height: 3200px;
+  height: 1700px;
   position:relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  &__img{
-    &--right{
-      &-frame{
-        @include position-abs($width: 788px, $height: 1500px, $top: 50%, $right: 50%);
-        background-image: url("https://static.toss.im/screens/iPhone12_Clay_Shadow.png");
-        background-size: cover;
-        z-index: 10;
-        margin-top: -1135px;
-        margin-right: -574px;
-      }
-      &-ctn{
-        @include position-abs($width: 543px, $height: 1144px, $top: 50%, $right: 50%);
-        background-size: cover;
-        background-image: url(" https://static.toss.im/assets/homepage/newtossim/section1_1_home_01.png");
-        margin-right: -539px;
-        margin-top: -970px;
-      }
-    }
-    &--left{
-      &-frame{
-        @include position-abs($width: 788px, $height: 1500px, $top: 50%, $left: 50%);
-        background-image: url("https://static.toss.im/screens/iPhone12_Clay_Shadow.png");
-        background-size: cover;
-        margin-top: 210px;
-        margin-left: -745px;
-        z-index: 10;
-      }
-      &-ctn{
-        @include position-abs($width: 543px, $height: 1144px, $top: 50%, $left: 50%);
-        background-size: cover;
-        background-image: url("https://static.toss.im/assets/homepage/newtossim/section1_1_home_02.png");
-        margin-left: -541px;
-        margin-top: 399px;
-      }
-    }
-  }
   &__ctn-container{
+    position:relative;
     width: 1140px;
     height: 100%;
-    outline: 1px solid red;
-    padding-top:-100px;
+
+    &--img{
+      &-right{
+        &-frame{
+          @include position-abs($width: 614px, $height: 1000px, $top: 108px, $right: -110px);
+          background-image: url("https://static.toss.im/screens/iPhone12_Clay_Shadow.png");
+          background-size: 614px 1000px;
+          z-index: 10;
+        }
+        &-ctn{
+          @include position-abs($width: 368px, $height: 789px, $top: 218px, $right:4px);
+          background-size: 368px 789px;
+          background-image: url(" https://static.toss.im/assets/homepage/newtossim/section1_1_home_01.png");
+        }
+      }
+      &-left{
+        &-frame{
+          @include position-abs($width: 614px, $height: 1000px, $bottom: 200px, $left: -111px);
+          background-image: url("https://static.toss.im/screens/iPhone12_Clay_Shadow.png");
+          background-size: 614px 1000px;
+          z-index: 10;
+        }
+        &-ctn{
+          @include position-abs($width: 368px, $height: 789px, $bottom: 301px, $left: 10px);
+          background-size: 368px 789px;
+          background-image: url("https://static.toss.im/assets/homepage/newtossim/section1_1_home_02.png");
+        }
+      }
+    }
     &--text{
+      position:relative;
       &-left{
         &-1{
-          outline: 1px solid blue;
-          display: inline-block;
           font-size:26px;
           color: #3182f6;
-          margin-top: 200px;
-          margin-left: -1038px;
+          position:absolute;
+          top: 150px;
           white-space: nowrap;
         }
         &-2{
+          margin-top:210px;
           white-space: nowrap;
           text-align: left;
           font-size: 43px;
           line-height: 1.6;
         }
       }
+      &-right{
+        &-1{
+          display: inline-block;
+          white-space: nowrap;
+          margin-top: 760px;
+          margin-right: -673px;
+          font-size: 23px;
+          line-height: 1.5;
+          text-align: left;
+        }
+      }
     }
-
-
   }
-
 }
 
 .section4{
   background-color: #f9fafb;
-  height: 2500px;
-  &__title{
-    display: inline-block;
-    margin-top: 222px;
-    margin-left: -1255px;
-    font-size: 40px;
-    color: #3182f6;
-    text-align: left;
+  height: 2000px;
+  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__ctn-container {
+    position: relative;
+    width: 1140px;
+    height: 100%;
   }
-  &__sub-title{
-    margin-top: 13px;
-    left: 100px;
-    margin-left:193px;
-    text-align: left;
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 1.555;
+
+  &__title {
+    &--1{
+      font-size:26px;
+      color: #3182f6;
+      position:absolute;
+      top: 150px;
+      white-space: nowrap;
+    }
+    &--2{
+      margin-top:210px;
+      white-space: nowrap;
+      text-align: left;
+      font-size: 43px;
+      line-height: 1.6;
+    }
   }
+
   &__ctn{
-    &-1{
-      &-1{
-        color: #3182f6;
-        text-align: left;
-        margin-left: 262px;
-        margin-top: 174px;
-        font-size: 24px;
+    &--1{
+      padding-left: 150px;
+      padding-top: 150px;
+      position: relative;
+      &-text{
+        &-1{
+          color: #3182f6;
+          text-align: left;
+          position: relative;
+        }
+        &-2{
+          display: inline-block;
+          font-size: 30px;
+          text-align: left;
+          font-weight: bolder;
+          top: 15px;
+          left: -408px;
+          position: relative;
+          line-height: 1.7;
+          color: #333d4b;
+        }
+        &-3{
+          left: -70px;
+          text-align: left;
+          color: #6b7684;
+          line-height: 1.6;
+          font-size: 19px;
+          position: relative;
+        }
       }
-      &-2{
-        text-align: left;
-        margin-left: 201px;
-        margin-top: -23px;
-        line-height: 1.4;
-        font-size: 50px;
-      }
-      &-3{
-        color: #6b7684;
-        text-align: left;
-        margin-left: 201px;
-        margin-top: -23px;
-        line-height: 1.4;
-        font-size: 30px;
-      }
-      &-4{
-        @include position-abs($width: 450px, $height: 350px, $top: 510%, $right: 15%);
+      &-img{
+        @include position-abs($width: 450px, $height: 350px, $top: 80px, $right: 70px);
         background-size: cover;
       }
     }
-    &-2{
-      &-1{
-        @include position-abs($width: 450px, $height: 350px, $top: 566%, $left: 10%);
+    &--2{
+      padding-left: 150px;
+      padding-top: 150px;
+      position: relative;
+      &-img{
+        @include position-abs($width: 450px, $height: 350px, $top: 150px, $left: 70px);
         background-size: cover;
       }
-      &-2{
-        text-align: left;
-        color: #3182f6;
-        margin-left: 1067px;
-        margin-top: 249px;
-        font-size: 24px;
-        line-height: 1.7;
-      }
-      &-3{
-        text-align: left;
-        margin-left: 994px;
-        margin-top: -23px;
-        line-height: 1.4;
-        font-size: 50px;
-      }
-      &-4{
-        color: #6b7684;
-        text-align: left;
-        margin-top: -23px;
-        margin-left: 994px;
-        line-height: 1.4;
-        font-size: 30px;
+      &-text{
+        &-1{
+          top: -5px;
+          font-size: 17px;
+          font-weight: bolder;
+          color: #3182f6;
+          text-align: left;
+          position: relative;
+        }
+        &-2{
+          display: inline-block;
+          font-size: 30px;
+          text-align: left;
+          font-weight: bolder;
+          top: 15px;
+          left: 377px;
+          position: relative;
+          line-height: 1.7;
+          color: #333d4b;
+        }
+        &-3{
+          display: inline-block;
+          right: 16px;
+          top: 111px;
+          text-align: left;
+          color: #6b7684;
+          line-height: 1.6;
+          font-size: 19px;
+          position: relative;
+          font-weight: bolder;
+        }
       }
     }
-    &-3{
-      &-1{
-        color: #3182f6;
-        text-align: left;
-        margin-left: 262px;
-        margin-top: 174px;
-        font-size: 24px;
+    &--3{
+      position: relative;
+      &-text{
+        &-1{
+          top: 283px;
+          left: -358px;
+          font-size: 17px;
+          font-weight: bolder;
+          color: #3182f6;
+          text-align: left;
+          position: relative;
+        }
+        &-2{
+          display: inline-block;
+          font-size: 30px;
+          text-align: left;
+          font-weight: bolder;
+          top: 295px;
+          left: -94px;
+          position: relative;
+          line-height: 1.7;
+          color: #333d4b;
+        }
+        &-3{
+          display: inline-block;
+          left: -351px;
+          top: 358px;
+          text-align: left;
+          color: #6b7684;
+          line-height: 1.6;
+          font-size: 19px;
+          position: relative;
+          font-weight: bolder;
+        }
       }
-      &-2{
-        text-align: left;
-        margin-left: 201px;
-        margin-top: -23px;
-        line-height: 1.4;
-        font-size: 50px;
-      }
-      &-3{
-        color: #6b7684;
-        text-align: left;
-        margin-left: 201px;
-        margin-top: -23px;
-        line-height: 1.4;
-        font-size: 30px;
-      }
-      &-4{
-        @include position-abs($width: 450px, $height: 350px, $top: 620%, $right: 15%);
+      &-img{
+        @include position-abs($width: 450px, $height: 350px, $top: 230px, $right: 70px);
         background-size: cover;
       }
     }
   }
-}
+
+
+  }
 
 .section5{
-  height: 1400px;
+  height: 1300px;
+  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__ctn-container {
+    position: relative;
+    width: 1140px;
+    height: 100%;
+  }
   &__section-name{
-    text-align: left;
-    font-size: 40px;
+    font-size:26px;
     color: #3182f6;
-    margin-left:400px;
-    margin-top:200px;
+    position:absolute;
+    top: 150px;
+    white-space: nowrap;
   }
   &__title{
     text-align: left;
     font-size: 40px;
-    margin-left:400px;
-    margin-top:50px;
     line-height: 70px;
+    position: relative;
+    top: 185px;
+    left: 10px;
   }
   &__text{
     &--1{
       text-align: left;
       font-size: 40px;
-      margin-left:400px;
-      margin-top:50px;
-      line-height: 70px;
+      position: relative;
+      left: 10px;
+      top: 377px;
+      line-height: 1.6;
     }
     &--2{
       text-align: left;
-      font-size: 30px;
-      margin-left:400px;
-      margin-top:50px;
-      line-height: 70px;
+      font-size: 24px;
+      font-weight: 500;
+      position: relative;
+      bottom: -383px;
+      left: 10px;
+      line-height: 1.3;
     }
   }
   &__phone{
     &--frame{
-      @include position-abs($width: 788px, $height: 1500px, $top: 692%, $right: 20%);
+      @include position-abs($width: 641px, $height: 1000px, $top: 84px, $right: -117px);
       background-image: url("https://static.toss.im/screens/iPhone12_Clay_Shadow.png");
-      background-size: cover;
-      margin-right: -281px;
+      background-size: 641px 1000px;
       z-index: 10;
     }
     &--ctn{
-      @include position-abs($width: 543px, $height: 1144px, $top: 692%, $right: 20%);
-      background-size: cover;
+      @include position-abs($width: 368px, $height: 789px, $top: 178px, $right: 13px);
+      background-size: 368px 789px;
       background-image: url("https://static.toss.im/assets/homepage/newtossim/section1_3_loan_03.png");
-      margin-right: -246px;
-      margin-top: 165px;
     }
   }
 }
@@ -346,125 +399,95 @@ html, body{
 .section6{
   background-color: #f9fafb;
   height: 1500px;
+  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__ctn-container {
+    position: relative;
+    width: 1140px;
+    height: 100%;
+  }
   &__section-name{
-    display: inline-block;
-    text-align: left;
-    font-size: 30px;
-    font-weight: 600;
+    left:0;
+    font-size:26px;
+    font-weight: bold;
     color: #3182f6;
-    padding-top: 200px;
-    margin-left: -1268px;
+    position:absolute;
+    top: 200px;
+    white-space: nowrap;
   }
   &__title{
-    margin-top:30px;
     text-align: left;
-    font-size: 30px;
+    font-size: 47px;
     font-weight: 600;
-    margin-left: 280px;
+    position: relative;
+    top: 252px;
     line-height: 1.6;
   }
-  &__sub-title{
+  &__row{
     &--1{
-      display: inline-block;
-      &-logo{
-        @include position-abs($width: 120px, $height: 120px, $top:911%, $left: 15%);
-        background-size: cover;
-        margin-top: 30px;
-        background-image: url("https://static.toss.im/icons/png/4x/icon-credit-grade-check-2.png");
+      display: flex;
+      position: relative;
+      top: 328px;
+      left: 0px;
+      &-1{
+        width: 560px;
+        position: relative;
+        &-text{
+          color: #8c959f;
+          text-align: left;
+          font-size: 22px;
+          font-weight: 600;
+          line-height: 1.5;
+          top: -55px;
+          position: relative;
+        }
       }
-      &-text{
-        display: inline-block;
-        font-size: 28px;
-        font-weight: 700;
-        line-height: 1.5;
-        margin-top: 253px;
-        margin-left: -474px;
-      }
-      &-desc{
-        display: inline-block;
-        text-align: left;
-        font-size: 22px;
-        font-weight: 600;
-        line-height: 1.5;
-        margin-left: -196px;
+      &-2{
+        width: 560px;
+        position: relative;
+        &-text{
+          color: #8c959f;
+          text-align: left;
+          font-size: 22px;
+          font-weight: 600;
+          line-height: 1.5;
+          top: -55px;
+          position: relative;
+        }
       }
     }
     &--2{
-      display: inline-block;
-      &-logo{
-        @include position-abs($width: 120px, $height: 120px, $top:911%, $left: 53%);
-        background-size: cover;
-        margin-top: 30px;
-        background-image: url("https://static.toss.im/icons/png/4x/icon-credit-grade-up-2.png");
-      }
-      &-text{
-        display: inline-block;
-        font-size: 28px;
-        font-weight: 700;
-        line-height: 1.5;
-        float: right;
-        margin-right: 202px;
-        margin-top: -31px;
-      }
-      &-desc{
-        display: inline-block;
-        text-align: left;
-        font-size: 22px;
-        font-weight: 600;
-        line-height: 1.5;
-        margin-left:308px;
-      }
-    }
-    &--3{
       display: flex;
-      flex-direction: column;
-      &-logo{
-        @include position-abs($width: 120px, $height: 120px, $top:959%, $left: 15%);
-        background-size: cover;
-        background-image: url("https://static.toss.im/icons/png/4x/icon-alarm-3.png");
+      position: relative;
+      top: 328px;
+      left: 0px;
+      &-1{
+        width: 560px;
+        position: relative;
+        &-text{
+          color: #8c959f;
+          text-align: left;
+          font-size: 22px;
+          font-weight: 600;
+          line-height: 1.5;
+          top: -55px;
+          position: relative;
+        }
       }
-      &-text{
-        display: inline-block;
-        font-size: 28px;
-        font-weight: 700;
-        line-height: 1.5;
-        margin-top: 275px;
-        margin-left: -1154px;
-      }
-      &-desc{
-        display: inline-block;
-        text-align: left;
-        margin-left: 288px;
-        font-size: 22px;
-        font-weight: 600;
-        line-height: 1.5;
-      }
-    }
-    &--4{
-      display: inline-block;
-      &-logo{
-        @include position-abs($width: 120px, $height: 120px, $top:955%, $left: 53%);
-        background-size: cover;
-        margin-top: 30px;
-        background-image: url("https://static.toss.im/icons/png/4x/icon-bulb-2.png");
-      }
-      &-text{
-        display: inline-block;
-        font-size: 28px;
-        font-weight: 700;
-        line-height: 1.5;
-        float: right;
-        margin-left: 297px;
-        margin-top: -122px;
-      }
-      &-desc{
-        position:absolute;
-        text-align: left;
-        font-size: 22px;
-        font-weight: 600;
-        line-height: 1.5;
-        margin-top: -80px;
-        margin-left: 296px;
+      &-2{
+        width: 560px;
+        position: relative;
+        &-text{
+          color: #8c959f;
+          text-align: left;
+          font-size: 22px;
+          font-weight: 600;
+          line-height: 1.5;
+          top: -55px;
+          position: relative;
+        }
       }
     }
   }
@@ -472,65 +495,85 @@ html, body{
 
 .section7{
   height:1800px;
+  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__ctn-container {
+    position: relative;
+    width: 1140px;
+    height: 100%;
+  }
+
   &__section-name{
     display: inline-block;
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 1.3;
+    font-size: 26px;
     color: #3182f6;
-    margin-left: -1034px;
-    padding-top: 348px;
+    position: relative;
+    top: 200px;
+    left: -544px;
+    white-space: nowrap;
   }
   &__title{
-    font-weight: 700;
-    line-height: 1.4;
     text-align: left;
     font-size: 40px;
-    margin-left:400px;
-    margin-top:50px;
+    line-height: 70px;
+    position: relative;
+    top: 252px;
+    left: 1px;
+    font-weight: 600;
   }
   &__frame{
-    @include position-abs($width: 600px, $height: 936px, $top: 1072%, $right: 45%);
-    background-image: url("https://static.toss.im/screens/iPhone12_Clay_Shadow.png");
-    background-size: cover;
-    margin-right: -148px;
+    position: absolute;
+    top: 440px;
+    right: 269px;
+    width: 641px;
+    height: 1000px;
+    background-image: url(https://static.toss.im/screens/iPhone12_Clay_Shadow.png);
+    background-size: 641px 1000px;
     z-index: 10;
   }
   &__ctn{
-    @include position-abs($width: 338px, $height: 692px,$top: 1072%, $right: 45%);
-    background-size: cover;
+    position: absolute;
+    top: 543px;
+    right: 403px;
+    width: 368px;
+    height: 789px;
+    background-size: 368px 789px;
     background-image: url("https://static.toss.im/assets/homepage/newtossim/section1_5_stock_01.png");
-    margin-right: -18px;
-    margin-top: 101px;
   }
   &__text1{
+    text-align: left;
     display: inline-block;
     font-size: 23px;
     font-weight: 600;
     line-height: 1.5;
-    margin-left: -203px;
-    margin-top: 290px;
+    position: relative;
+    left: -359px;
+    top: 636px;
   }
   &__text2{
-    float:right;
-    display: inline-block;
+    text-align: left;
     font-size: 23px;
     font-weight: 600;
     line-height: 1.5;
-    margin-top: 290px;
-    margin-right: 487px;
+    position: relative;
+    right: -776px;
+    top: 535px;
   }
   &__text3{
+    text-align: center;
     font-size: 23px;
     font-weight: 600;
     line-height: 1.5;
-    margin-top: 512px;
-    margin-left: -100px;
+    position: relative;
+    bottom: -1072px;
+    left: -7px;
   }
 }
 
 .section8{
-  height: 1000px;
+  height: 799px;
   &__bg{
     width: 100vw;
     height: 800px;
@@ -538,7 +581,8 @@ html, body{
     background-image: url("https://static.toss.im/assets/homepage/newtossim/section2_4_big.jpg");
   }
   &__title{
-    @include position-abs($width: 1000px, $height: 200px, $top: 1236%, $right: 50%);
+    position: relative;
+    top: -560px;
     font-size: 100px;
     font-weight: 700;
     line-height: 1.3;
@@ -548,138 +592,357 @@ html, body{
 }
 
 .section9{
-  height: 1000px;
-  &__title{
-    @include position-abs($width: 1000px, $height: 200px, $top: 1313%, $right: 50%);
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 1.4;
-    text-align: left;
+  height:1900px;
+  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:0;
+  &__ctn-container {
+    outline: 1px solid red;
+    position: relative;
+    width: 1140px;
+    height: 100%;
   }
-  &__ctn{
-    @include position-abs($width: 100%, $height: 800px, $top: 1349%, $right: 27%);
-    max-width: 740px;
-    background-size: cover;
-    background-image: url("https://static.toss.im/assets/homepage/newtossim/section2_1_document.jpg");
+  &__title{
+    text-align: left;
+    font-size: 40px;
+    line-height: 70px;
+    position: relative;
+    top: 252px;
+    left: 1px;
+    font-weight: 600;
+  }
+&__text{
+  margin-top: 1200px;
+  &--1{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #191f28;
+    position: relative;
+    top: -742px;
+    left: -138px;
+  }
+  &--2{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #b0b8c1;
+    position: relative;
+    top: -741px;
+    left: -133px;
+  }
+  &--3{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #333d4b;
+    text-align: left;
+    position: relative;
+    top: -736px;
+    left: 29px;
+  }
+}
+}
+
+.section10{
+  height: 1300px;
+  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:0;
+  &__ctn-container {
+    outline: 1px solid red;
+    position: relative;
+    width: 1140px;
+    height: 100%;
+    display: flex;
+  }
+  &__left{
+    outline: 1px solid blue;
+    width: 55%;
+    left: 30px;
+    position: relative;
+    &--text1{
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1.3;
+      color: #191f28;
+      position: relative;
+      top: 46px;
+      left: -272px;
+    }
+    &--text2{
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1.3;
+      color: #b0b8c1;
+      position: absolute;
+      top: 885px;
+      left: 0px;
+      text-align: left;
+    }
+  }
+  &__right{
+    outline: 1px solid yellowgreen;
+    width: 36%;
+    position: relative;
+    right: -74px;
+    &--text{
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 1.5;
+      color: #333d4b;
+      top: 706px;
+      left: 0;
+      width: 400px;
+      text-align: left;
+      position: absolute;
+    }
+  }
+}
+
+.section11{
+  height: 1100px;
+  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:0;
+  &__ctn-container {
+    outline: 1px solid red;
+    position: relative;
+    width: 1140px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
   }
   &__text{
-    margin-top: 1200px;
     &--1{
       font-size: 40px;
       font-weight: 700;
       line-height: 1.3;
       color: #191f28;
-      margin-left: -177px;
+      margin-bottom: 5px;
+      position: relative;
+      top: 50px;
+      left: -139px;
     }
     &--2{
       font-size: 40px;
       font-weight: 700;
       line-height: 1.3;
       color: #b0b8c1;
-      margin-left:10px;
+      position: relative;
+      left: -465px;
+      top: 106px;
     }
     &--3{
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 600;
       line-height: 1.5;
       color: #333d4b;
       text-align: left;
-      margin-left: 455px;
-    }
-  }
-}
-
-.section10{
-  height: 1000px;
-  &__left{
-    &-img{
-      @include position-abs($width: 600px, $height: 800px, $top: 1476%, $left: 24%);
-      background-size: cover;
-      background-image: url("https://static.toss.im/assets/homepage/newtossim/section2_2_insu_01.jpg");
-    }
-    &-title{
-      display: inline-block;
-      font-size: 40px;
-      font-weight: 700;
-      line-height: 1.3;
-      color: #191f28;
-      margin-left: -917px;
-      margin-top: 170px;
-    }
-    &-desc{
-      font-size: 40px;
-      font-weight: 700;
-      line-height: 1.3;
-      color: #b0b8c1;
-      text-align: left;
-      margin-left: 446px;
-    }
-  }
-  &__right{
-
-    &-img{
-      @include position-abs($width: 300px, $height: 400px, $top: 1476%, $left: 50%);
-      background-size: cover;
-      background-image: url("https://static.toss.im/assets/homepage/newtossim/section2_2_insu_02.jpg");
-      margin-left: 156px;
-      margin-top: 156px;
-    }
-    &-desc{
-      display: inline-block;
-      text-align: left;
-      font-size: 20px;
-      font-weight: 600;
-      line-height: 1.5;
-      color: #333d4b;
-      float: right;
-      margin-top: -400px;
-      margin-right: 395px;
-
-    }
-  }
-}
-
-.section11{
-  height: 1000px;
-  &__bg{
-    @include position-abs($width: 1178px, $height: 800px, $top: 1597%, $right: 17%);
-    background-size: cover;
-    background-image: url("https://static.toss.im/assets/homepage/newtossim/section2_3_apt_01.jpg");
-  }
-  &__text{
-    &--left{
-      &-1{
-        @include position-abs($width: 1000px, $height: 100px, $top: 1690%, $right: 50%);
-        font-size: 43px;
-        font-weight: 700;
-        line-height: 1.4;
-        text-align: left;
-        margin-right: -429px;
-      }
-      &-2{
-        @include position-abs($width: 1000px, $height: 100px, $top: 1698%, $right: 50%);
-        font-size: 43px;
-        font-weight: 700;
-        line-height: 1.4;
-        text-align: left;
-        margin-right: -429px;
-        color: #6b7684;
-      }
-    }
-    &--right{
-      @include position-abs($width: 1000px, $height: 100px, $top: 1690%, $right: -2%);
-      font-size: 23px;
-      font-weight: 700;
-      line-height: 1.4;
-      text-align: left;
+      right: -546px;
+      top: -26px;
+      position: relative;
     }
   }
 
 }
 
 .section12{
-  width: 100vw;
+  background-color: #f9fafb;
+  height: 1300px;
+  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__ctn-container {
+    outline: 1px solid red;
+    position: relative;
+    width: 1140px;
+    height: 100%;
+  }
+  &__section-name{
+    left:0;
+    font-size:26px;
+    font-weight: bold;
+    color: #3182f6;
+    position:absolute;
+    top: 200px;
+    white-space: nowrap;
+  }
+  &__title{
+    text-align: left;
+    font-size: 47px;
+    font-weight: 600;
+    position: relative;
+    top: 252px;
+    line-height: 1.6;
+  }
+  &__row{
+    &--1{
+      display: flex;
+      position: relative;
+      top: 328px;
+      left: 0px;
+      &-1{
+        width: 560px;
+        position: relative;
+        &-text{
+          color: #8c959f;
+          text-align: left;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 1.5;
+          top: -26px;
+          position: relative;
+        }
+      }
+      &-2{
+        width: 560px;
+        position: relative;
+        &-text{
+          color: #8c959f;
+          text-align: left;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 1.5;
+          top: -26px;
+          position: relative;
+        }
+      }
+    }
+    &--2{
+      display: flex;
+      position: relative;
+      top: 328px;
+      left: 0px;
+      &-1{
+        width: 560px;
+        position: relative;
+        &-text{
+          color: #8c959f;
+          text-align: left;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 1.5;
+          top: -26px;
+          position: relative;
+        }
+      }
+      &-2{
+        width: 560px;
+        position: relative;
+        &-text{
+          color: #8c959f;
+          text-align: left;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 1.5;
+          top: -26px;
+          position: relative;
+        }
+      }
+    }
+  }
+}
+
+.section13{
   height: 1200px;
-  background: url("https://static.toss.im/assets/homepage/newtossim/section4_device.jpg");
+  width: 100vw;
+  background: url("https://static.toss.im/assets/homepage/newtossim/section4_device.jpg") ;
   background-size: cover;
 }
+
+.section14{
+  height: 900px;
+  background-color: black;
+  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__ctn-container {
+    position: relative;
+    width: 1140px;
+    height: 100%;
+  }
+  &__title{
+    &--main{
+      font-size: 60px;
+      font-weight: 700;
+      line-height: 1.4;
+      color: #fff;
+      text-align: center;
+    }
+    &--sub{
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 1.4;
+      color: #b0b8c1;
+      position: relative;
+      text-align: center;
+      top: 47px;
+    }
+  }
+
+  ul{
+    position: relative;
+    list-style: none;
+    top: 198px;
+    display: flex;
+    justify-content: space-evenly;
+    li{
+      display:inline-block ;
+      margin-left: -32px;
+      span{
+        text-align: left;
+        margin-bottom: 12px;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 1.3;
+        color: #fff;
+      }
+      p{
+        text-align: left;
+        max-width: 300px;
+        margin-bottom: 38px;
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 1.6;
+        color: #b0b8c1;
+      }
+      button{
+        background-color: #3182f6;;
+        padding:10px;
+        border-radius: 10px;
+        color:#ffffff;
+        font-weight: 600;
+        font-size: 17px;
+      }
+      button:hover{
+        background-color: #1b64da;
+
+      }
+    }
+  }
+}
+
+.section15{
+  height: 800px;
+  background-color: #191f28;
+  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__ctn-container {
+    outline: 1px solid red;
+    position: relative;
+    width: 1140px;
+    height: 100%;
+  }
+}
+
