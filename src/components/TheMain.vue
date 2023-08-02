@@ -1,4 +1,14 @@
 <template>
+<!--  <section class="section0">-->
+<!--    <div class="section0__main-logo"></div>-->
+<!--    <ul class="section0__list">-->
+<!--      <li><a>회사소개</a></li>-->
+<!--      <li><a>고객센터</a></li>-->
+<!--      <li><a>자주 묻는 질문</a></li>-->
+<!--      <li><a>토스인증서</a></li>-->
+<!--      <li><a>채용</a></li>-->
+<!--    </ul>-->
+<!--  </section>-->
   <section class="section1">
     <h1 class="section1__title">금융의 모든 것 <br /> 토스에서 쉽고 간편하게</h1>
     <a href="" class="section1__apple">
@@ -397,7 +407,90 @@
   </section>
 
   <section class="section15">
-    <div class="section15__ctn-container"></div>
+    <div class="section15__ctn-container">
+     <ul class="section15__list">
+       <li class="section15__item-title">
+         <span style="font-weight: bold; color:#b0b8c1; padding-bottom: 15px;font-size: 15px">서비스</span>
+         <a href="" class="section15__item">공지사항</a>
+         <a href="" class="section15__item">자주 묻는 질문</a>
+         <a href="" class="section15__item">공동인증서 관리</a>
+         <a href="" class="section15__item">계정 일시잠금</a>
+         <a href="" class="section15__item">고객센터</a>
+         <a href="" class="section15__item">브랜드 리소스센터</a>
+         <a href="" class="section15__item">토스의 개인정보 보호</a>
+       </li>
+
+       <li class="section15__item-title">
+         <span style="font-weight: bold; color:#b0b8c1; padding-bottom: 15px;font-size: 15px">회사</span>
+         <a href="" class="section15__item">회사 소개</a>
+         <a href="" class="section15__item">토스페이먼츠</a>
+         <a href="" class="section15__item">토스인슈어런스</a>
+         <a href="" class="section15__item">토스증권</a>
+         <a href="" class="section15__item">토스씨엑스</a>
+         <a href="" class="section15__item">토스뱅크</a>
+         <a href="" class="section15__item">토스플레이스</a>
+         <a href="" class="section15__item">채용</a>
+         <a href="" class="section15__item">블로그</a>
+         <a href="" class="section15__item">공고</a>
+       </li>
+
+       <li class="section15__item-title">
+         <span style="font-weight: bold; color:#b0b8c1; padding-bottom: 15px;font-size: 15px">문의</span>
+         <a href="" class="section15__item">사업 제휴</a>
+         <a href="" class="section15__item">공동구매 입점문의</a>
+         <a href="" class="section15__item">광고 문의</a>
+         <a href="" class="section15__item">인증 사업문의</a>
+         <a href="" class="section15__item">마케팅·PR</a>
+         <a href="" class="section15__item">IR</a>
+       </li>
+
+       <li class="section15__item-title">
+         <span style="font-weight: bold; color:#b0b8c1; padding-bottom: 15px;font-size: 15px">고객센터</span>
+         <span>전화: 1599-4905 (24시간 연중무휴)</span>
+         <span>이메일(고객전용): support@toss.im</span>
+         <span>이메일(외부기관전용): safe@toss.im</span>
+         <span>민원 접수</span>
+       </li>
+     </ul>
+
+      <div class="section15__bottom-inform">
+        <span style="font-weight: bold; color:#b0b8c1; padding-bottom: 15px;font-size: 14px">㈜비바리퍼블리카</span>
+
+        <p class="section15__address">
+          사업자 등록번호 : 120-88-01280 | 대표 : 이승건 <br/>
+          호스팅 서비스 : 주식회사 비바리퍼블리카 | 통신판매업 신고번호 : 2014-서울강남-03377<br/>
+          <span>사업자정보확인</span><br/>
+          06236 서울특별시 강남구 테헤란로 142, 4층, 10층, 11층, 12층, 13층, 22층, 23층 (역삼동, 아크플레이스)<br/>
+          고객센터 : 서울특별시 강남구 테헤란로 133, 9층 (역삼동, 한국타이어빌딩)
+        </p>
+
+        <ul>
+          <li>
+            <a href="">서비스 이용약관</a><br/>
+            <a style="font-weight: 900; color: #b0b8c1" href="">개인정보 처리방침</a><br/>
+            <a href="">가맹점 고지사항</a><br/>
+          </li>
+          <li>
+            <a href="">통합 금융정보 서비스 약관</a><br/>
+            <a style="font-weight: 900; color: #b0b8c1" href="">채용팀 개인정보 처리방침</a><br/>
+            <a href="">토스 전자서명인증업무준칙</a><br/>
+          </li>
+          <li>
+            <a href="">마이데이터 서비스 이용약관</a><br/>
+            <a href="">영상정보처리기기 운영 관리 방침</a><br/>
+            <a href="">토스 전자인증서비스 약관</a><br/>
+          </li>
+          <li>
+            <a href="">이용자의 권리 및 유의사항</a><br/>
+            <a href="">위치기반 서비스 이용약관</a><br/>
+            <a href="">금융소비자보호</a><br/>
+          </li>
+        </ul>
+
+        <img src="/img/sns-logo.png" alt="sns-logo" style="width: 250px; margin-top: 10px"/>
+      </div>
+
+    </div>
   </section>
 
 

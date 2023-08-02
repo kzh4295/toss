@@ -33,6 +33,16 @@ html, body{
   }
 }
 
+//.section0{
+//  height: 1000px;
+//  outline: 1px solid red;
+//  background-color: red;
+//  position:fixed;
+//  top:0;
+//  margin:0;
+//  z-index: 100;
+//}
+
 .section1{
   width: 100vw;
   height: 100vh;
@@ -599,7 +609,6 @@ html, body{
   align-items: center;
   margin:0;
   &__ctn-container {
-    outline: 1px solid red;
     position: relative;
     width: 1140px;
     height: 100%;
@@ -654,14 +663,12 @@ html, body{
   align-items: center;
   margin:0;
   &__ctn-container {
-    outline: 1px solid red;
     position: relative;
     width: 1140px;
     height: 100%;
     display: flex;
   }
   &__left{
-    outline: 1px solid blue;
     width: 55%;
     left: 30px;
     position: relative;
@@ -686,7 +693,6 @@ html, body{
     }
   }
   &__right{
-    outline: 1px solid yellowgreen;
     width: 36%;
     position: relative;
     right: -74px;
@@ -712,7 +718,6 @@ html, body{
   align-items: center;
   margin:0;
   &__ctn-container {
-    outline: 1px solid red;
     position: relative;
     width: 1140px;
     height: 100%;
@@ -761,7 +766,6 @@ html, body{
   justify-content: center;
   align-items: center;
   &__ctn-container {
-    outline: 1px solid red;
     position: relative;
     width: 1140px;
     height: 100%;
@@ -925,24 +929,106 @@ html, body{
       }
       button:hover{
         background-color: #1b64da;
-
       }
     }
   }
 }
 
 .section15{
-  height: 800px;
+  height: 850px;
   background-color: #191f28;
   position:relative;
   display: flex;
   justify-content: center;
   align-items: center;
   &__ctn-container {
-    outline: 1px solid red;
     position: relative;
     width: 1140px;
     height: 100%;
+  }
+
+  &__list{
+    display: flex;
+    li{
+      text-align: left;
+      width: 25%;
+      top: 50px;
+      right: 40px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-self: flex-start;
+      &:nth-child(4){
+        width: 40%;
+        color: #6b7684;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 2;
+      }
+    }
+    a{
+      align-items: flex-start;
+      color: #6b7684;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 2;
+    }
+    a:hover{
+      text-decoration: underline;
+    }
+  }
+
+  &__bottom-inform{
+    display: flex;
+    flex-direction: column;
+    margin-top:150px;
+
+    span {
+      text-align:left;
+    }
+    p{
+      text-align: left;
+    }
+
+    ul{
+      display: flex;
+      li{
+        text-align: left;
+        width: 20%;
+        margin-left: -39px;
+        font-size: 12px;
+        font-weight: 500;
+        a{
+          color: #6b7684;
+          text-decoration: none;
+          line-height: 1.5;
+        }
+        a:hover{
+          text-decoration: underline;
+        }
+        &:nth-child(1){
+        }
+        &:nth-child(2){
+          margin-left: -77px;
+        }
+        &:nth-child(3){
+          margin-left: -17px;
+        }
+        &:nth-child(4){
+          margin-left: 5px;
+        }
+
+      }
+    }
+  }
+  &__address{
+    color: #6b7684;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.6;
   }
 }
 
