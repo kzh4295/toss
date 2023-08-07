@@ -223,7 +223,9 @@
         모두가 할 수 있도록
       </div>
       <div class="section7__frame"></div>
-      <div class="section7__ctn"></div>
+      <div class="section7__ctn">
+        <img class="section7__ctn-list" src="/img/ctn-list.png" alt ='ctn-list' />
+      </div>
       <div class="section7__text1">
         이해하기 쉬운 용어<br/>
         설명이 필요 없는<br/>
@@ -499,6 +501,9 @@
 <script>
 export default {
   name: 'TheMain',
+  methods() {
+
+  }
 }
 </script>
 
