@@ -224,7 +224,9 @@
       </div>
       <div class="section7__frame"></div>
       <div class="section7__ctn">
+        <div class=section7__left-side :style='`width:${this.leftWidth}px`'></div>
         <img class="section7__ctn-list" src="/img/ctn-list.png" alt ='ctn-list' />
+        <div class="section7__right-side" :style='`width:${this.rightWidth}px`'></div>
       </div>
       <div class="section7__text1">
         이해하기 쉬운 용어<br/>
@@ -501,8 +503,34 @@
 <script>
 export default {
   name: 'TheMain',
-  methods() {
+  data() {
+    return {
+      leftWidth: 560,
+      rightWidth: 560,
+    };
+  },
+  watch: {
+  },
+  mounted() {
+    window.addEventListener('scroll', this.runOnScroll);
+  },
+  methods: {
+    runOnScroll() {
+      if(scrollY>=8313 && scrollY < 8413){
+        this.leftWidth = 560
+        this.rightWidth = 560
+      } else if(scrollY >= 8413 && scrollY < 8513){
+        this.leftWidth = 372
+        this.rightWidth = 372
+      }  else if(scrollY >= 8513 && scrollY <9000){
+        this.leftWidth = 181
+        this.rightWidth = 181
+      } else if(scrollY > 9000) {
+        this.leftWidth = 0
+        this.rightWidth = 0
+      }
 
+    },
   }
 }
 </script>

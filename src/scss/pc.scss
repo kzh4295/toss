@@ -552,10 +552,30 @@ html, body{
     background-size: 368px 789px;
     background-image: url("https://static.toss.im/assets/homepage/newtossim/section1_5_stock_01.png");
   }
+  &__left-side{
+    background-color: white;
+    //width: 372px;
+    height: 177px;
+    position: absolute;
+    margin-top: 582px;
+    left: -455px;
+    overflow: auto;
+    transition: opacity 0.5s;
+  }
   &__ctn-list{
     margin-top: 580px;
     margin-left: -461px;
   }
+  &__right-side{
+    background-color: white;
+    height: 177px;
+    position: absolute;
+    margin-top: -188px;
+    right: -488px;
+    overflow: auto;
+    transition: opacity 0.5s;
+  }
+
   &__text1{
     text-align: left;
     display: inline-block;
