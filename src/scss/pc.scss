@@ -401,7 +401,6 @@ html, body{
     &--ctn{
       @include position-abs($width: 368px, $height: 789px, $top: 178px, $right: 13px);
       background-size: 368px 789px;
-      background-image: url("https://static.toss.im/assets/homepage/newtossim/section1_3_loan_03.png");
     }
   }
 }
@@ -609,14 +608,17 @@ html, body{
 .section8{
   height: 799px;
   &__bg{
-    width: 100vw;
+    //width: 100vw;
+    margin:0 auto;
     height: 800px;
     background-size: cover;
     background-image: url("https://static.toss.im/assets/homepage/newtossim/section2_4_big.jpg");
+    transition: opacity 0.5s;
   }
   &__title{
-    position: relative;
-    top: -560px;
+    position: absolute;
+    margin-top: -488px;
+    margin-left: 540px;
     font-size: 100px;
     font-weight: 700;
     line-height: 1.3;

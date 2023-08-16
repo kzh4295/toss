@@ -159,7 +159,7 @@
       </h2>
 
       <div class="section5__phone--frame"></div>
-      <div class="section5__phone--ctn"></div>
+      <img :src="currentImage" alt="Slideshow Image" class="section5__phone--ctn">
     </div>
   </section>
 
@@ -245,7 +245,7 @@
   </section>
 
   <section class="section8">
-    <div class="section8__bg"></div>
+    <div class="section8__bg" :style='`width:${this.centerWidth}vw`'></div>
     <h1 class="section8__title">꼭 필요했던 금융</h1>
   </section>
 
@@ -501,18 +501,32 @@
 </template>
 
 <script>
+
 export default {
   name: 'TheMain',
   data() {
     return {
       leftWidth: 560,
       rightWidth: 560,
+      centerWidth:50,
+      images : [
+        'https://static.toss.im/assets/homepage/newtossim/section1_3_loan_01.png',
+        'https://static.toss.im/assets/homepage/newtossim/section1_3_loan_02.png',
+        'https://static.toss.im/assets/homepage/newtossim/section1_3_loan_03.png'
+      ],
+      currentIndex: 0,
     };
   },
-  watch: {
+  computed: {
+    currentImage() {
+      return this.images[this.currentIndex];
+    },
   },
   mounted() {
     window.addEventListener('scroll', this.runOnScroll);
+
+    setInterval(this.changeImage, 2000);
+
   },
   methods: {
     runOnScroll() {
@@ -530,6 +544,32 @@ export default {
         this.rightWidth = 0
       }
 
+
+      if(scrollY < 9000){
+        this.centerWidth = 50
+      }  else if(scrollY < 9150){
+        this.centerWidth = 55
+      }else if(scrollY < 9100){
+        this.centerWidth = 60
+      } else if(scrollY < 9150){
+        this.centerWidth = 65
+      } else if(scrollY < 9200){
+        this.centerWidth = 70
+      } else if(scrollY < 9250){
+        this.centerWidth = 75
+      }else if(scrollY < 9300){
+        this.centerWidth = 80
+      } else if(scrollY < 9350){
+        this.centerWidth = 85
+      }else if(scrollY < 9400){
+        this.centerWidth = 90
+      } else {
+        this.centerWidth = 100
+      }
+    },
+
+    changeImage() {
+      this.currentIndex = (this.currentIndex + 1) % this.images.length;
     },
   }
 }
