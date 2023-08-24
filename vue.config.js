@@ -14,6 +14,7 @@ let config = {
       }
     }
   },
+  
   // devServer: {
   //   contentBase: '.',  																														// 정적 파일을 제공하는 기본 디렉터리로 이 경우, 현재 디렉토리로 설정
   //   watchOptions: {
